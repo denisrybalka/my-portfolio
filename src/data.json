@@ -1,0 +1,67 @@
+{
+    "data": [
+        {
+            "title": "Search Engine Dashboard",
+            "imageUrl": "aleno",
+            "description": "React / Development of Search Engine page with all functionality and mobile adaptation. Light/Dark themes, search, filters, charts, table filtering etc.",
+            "livePreviewLink": "https://aleno.netlify.app/",
+            "codeReviewLink": "https://github.com/denisrybalka/aleno"
+        },
+        {
+            "title": "Gecko Gambling Platform",
+            "imageUrl": "gecko",
+            "description": "React / Development of >15 pages of gambling platform with all devices mobile adaptation.",
+            "livePreviewLink": "https://gecko-casino.netlify.app/",
+            "codeReviewLink": "https://github.com/denisrybalka/gecko"
+        },
+        {
+            "title": "Design Agency",
+            "imageUrl": "design-agency",
+            "description": "React / Development of design agency's landing and connecting to Strapi CMS admin panel.",
+            "livePreviewLink": "https://extej-design-agency.netlify.app/",
+            "codeReviewLink": "https://github.com/denisrybalka/extej-frontend"
+        },
+        {
+            "title": "Gnii Dashboard",
+            "imageUrl": "gnii",
+            "description": "React / Development of dashboard page with all functionality and mobile adaptation. Light/Dark themes, charts (stock chart, pie charts), filtering and sorting tables, etc.",
+            "livePreviewLink": "https://gifted-volhard-4b8795.netlify.app/",
+            "codeReviewLink": "https://github.com/denisrybalka/gnii"
+        },
+        {
+            "title": "DE-FI Gambling Platform",
+            "imageUrl": "defi",
+            "description": "React / Development of >15 pages of gambling platform with all devices mobile adaptation.",
+            "livePreviewLink": "https://defi-game.netlify.app/",
+            "codeReviewLink": "https://github.com/denisrybalka/defi-game"
+        },
+        {
+            "title": "NFT Marketplace",
+            "imageUrl": "nft-marketplace",
+            "description": "React / Development of >15 pages of NFT Marketplace with mobile devices adaptation.",
+            "livePreviewLink": "https://nft-marketplace-hahahacker.netlify.app/",
+            "codeReviewLink": "https://github.com/denisrybalka/nft-project"
+        },
+        {
+            "title": "Lite Chat",
+            "imageUrl": "lite-chat",
+            "description": "React / Development of chat application with rooms. ExpressJS (Socket.io) on server and React on frontend.",
+            "livePreviewLink": "https://lite-chat.netlify.app/",
+            "codeReviewLink": "https://github.com/denisrybalka/react-socket.io-lite-chat"
+        },
+        {
+            "title": "Attendance Calendar",
+            "imageUrl": "attendance-calender",
+            "description": "React - Redux / via fullcalendar package. Development of attendence calendar with the ability to create a teacher's schedule for the day and keep up a record of the students present in the each group.",
+            "livePreviewLink": "https://attendance-calendar.netlify.app/",
+            "codeReviewLink": "https://github.com/denisrybalka/attendance-calendar"
+        },
+        {
+            "title": "Notes App",
+            "imageUrl": "notes",
+            "description": "React - Redux - Typescript / Simple Notes application. Adding and editing notes.",
+            "livePreviewLink": "https://n0tes-app.netlify.app/",
+            "codeReviewLink": "https://github.com/denisrybalka/react-redux-typescript-notes-app"
+        }
+    ]
+}
