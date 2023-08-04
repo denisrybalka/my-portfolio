@@ -41,7 +41,7 @@ const App = () => {
           </a>
           <a
             className='social'
-            href='./assets/CV Denis Rybalka — Frontend Developer.pdf'
+            href='CV Denis Rybalka — Frontend Developer.pdf'
             download
           >
             <img src={require("./assets/cv.png")} />
