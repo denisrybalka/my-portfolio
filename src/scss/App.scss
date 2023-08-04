@@ -1,110 +1,109 @@
 @import "./helpers/typed.scss";
 
 .App {
-    .container {
-        font-family: 'Waiting for the Sunrise', cursive;
-        padding: 0 15px;
+  .container {
+    font-family: "Waiting for the Sunrise", cursive;
+    padding: 0 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+      font-size: 48px;
+      @include typed(
+        "👋 Hi, my name is Denis",
+        "And I'm a Frontend Developer.",
+        2,
+        (
+          caret: false,
+        )
+      );
+    }
+
+    h2 {
+      font-size: 36px;
+      margin-top: 140px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 24px;
+    }
+
+    .socials {
+      display: flex;
+      gap: 34px;
+      margin: 20px 0px;
+
+      .social {
+        position: relative;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        cursor: pointer;
 
-        h1 {
-            font-size: 48px;
-            @include typed("👋 Hi, my name is Denis", "And I'm a Frontend Developer.", 2, (caret: false));
+        span {
+          position: absolute;
+          top: 60%;
+          margin-top: 10px;
+          padding: 0.55rem 1rem;
+          font-size: 1rem;
+          font-weight: 800;
+          white-space: nowrap;
+          color: #000;
+          border-radius: 50px;
+          background-color: #fff;
+          box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1),
+            0 5px 15px rgba(0, 0, 0, 0.07);
+
+          pointer-events: none;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+          opacity: 0;
+          transition: all 0.2s ease-in-out;
         }
 
-        h2 {
-            font-size: 36px;
-            margin-top: 140px;
-            margin-bottom: 20px;
+        &:hover {
+          span {
+            top: 100%;
+            opacity: 0.9;
+          }
         }
-
-        p {
-            font-size: 24px;
-        }
-
-        .socials {
-            display: flex;
-            gap: 34px;
-            margin: 20px 0px;
-
-            .social {
-                position: relative;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                cursor: pointer;
-
-                span {
-                    position: absolute;
-                    top: 60%;
-                    margin-top: 10px;
-                    padding: .55rem 1rem;
-                    font-size: 1rem;
-                    font-weight: 800;
-                    white-space: nowrap;
-                    color: #000;
-                    border-radius: 50px;
-                    background-color: #fff;
-                    box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1),
-                        0 5px 15px rgba(0, 0, 0, 0.07);
-
-                    pointer-events: none;
-                    -webkit-user-select: none;
-                    -moz-user-select: none;
-                    -ms-user-select: none;
-                    user-select: none;
-                    opacity: 0;
-                    transition: all 0.2s ease-in-out;
-                }
-
-                &:hover {
-                    span {
-                        top: 100%;
-                        opacity: 0.9;
-                    }
-                }
-            }
-        }
-
-        article {
-            /*  leverage cascade for cross-browser gradients  */
-            background: radial-gradient(
-              #FF4B3E, 
-              #FFB20F, 
-            ) fixed;
-            background: conic-gradient(
-                #FF4B3E, 
-                #FFB20F, 
-                #FF4B3E, 
-            ) fixed;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            text-align: center;
-
-            h2 {
-                font-size: 24px;
-                font-weight: bold;
-                line-height: 1.1;
-                margin: 15px 0px;
-              }
-          } 
-
-        .itemsList {
-            width: 50%;
-            display: flex;
-            gap: 24px 4%;
-            flex-wrap: wrap;
-            @media screen and (max-width: 1024px) {
-                width: 90%;
-                flex-direction: column;
-                .workItem {
-                    width: 100% !important;
-                }
-            }
-        }
+      }
     }
 
+    article {
+      /*  leverage cascade for cross-browser gradients  */
+      background: radial-gradient(#ff4b3e, #ffb20f) fixed;
+      background: conic-gradient(#ff4b3e, #ffb20f, #ff4b3e) fixed;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-align: center;
+
+      h2 {
+        font-size: 24px;
+        font-weight: bold;
+        line-height: 1.1;
+        margin: 15px 0px;
+      }
+    }
+
+    .itemsList {
+      width: 50%;
+      display: flex;
+      gap: 24px 4%;
+      flex-wrap: wrap;
+      @media screen and (max-width: 1024px) {
+        width: 90%;
+        flex-direction: column;
+        .workItem {
+          width: 100% !important;
+        }
+      }
+    }
+  }
 }
